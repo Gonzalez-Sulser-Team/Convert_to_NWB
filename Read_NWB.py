@@ -7,6 +7,7 @@ Created on 21/8/2024
 
 # import packages
 from pynwb import NWBHDF5IO, NWBFile, TimeSeries
+import matplotlib.pyplot as plt
 
 
 filepath = "SCN_477.nwb"
@@ -16,9 +17,17 @@ nwbfile = io.read()
 nwbfile
 
 # check the data is there etc
-nwbfile.TimeSeries.to_dataframe()
+print(nwbfile.acquisition['test_timeseries'])
 
 # plot the time series data
+test_swd = nwbfile.acquisition['test_timeseries'].data[:]
+plt.plot(test_swd)
+plt.show()
+
+# print the subject details
+
+
+# print electrode details
 
 
 
