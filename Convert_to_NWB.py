@@ -187,6 +187,7 @@ time_series_with_rate = TimeSeries(
 )
 time_series_with_rate
 
+# add the time series to the file
 nwbfile.add_acquisition(time_series_with_rate)
 
 
