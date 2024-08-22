@@ -25,10 +25,10 @@ plt.plot(test_swd)
 plt.show()
 
 # print the subject details
-
+print(nwbfile.subject)
 
 # print electrode details
-
+print(nwbfile.electrode_groups)
 
 
 io.close() # this stops it from corrupting the file

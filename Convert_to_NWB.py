@@ -147,7 +147,7 @@ for ishank in range(nshanks):
         nwbfile.add_electrode(
             group=electrode_group,
             label="shank{}elec{}".format(ishank, ielec),
-            location="brain area",
+            location="somatosensory cortex",
         )
         electrode_counter += 1
 
